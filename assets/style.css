@@ -10,41 +10,45 @@
 body {
     font-family: 'Roboto Mono', monospace;
     background-color: #e2d1f9;
+    display: flex;
+    flex-direction: column;
 
 }
 
 /* Header */
-
-.header {
+header {
     background-color: #317773;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    justify-content: space-evenly;
     position: fixed;
-    width:100%;
-    z-index: 99;
-    line-height: 80px;
-}
-#logo {
-    font-size: 220%;
-    line-height: 75px;
-    text-decoration: none;
-    color: white;
-    float: left;
-    letter-spacing: 3px;
-    margin-left: 20px;
 }
 
-#navbar li {
-    float: right;
+#navbar {
+    font-size: 110%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
     list-style-type: none;
-    font-size: 120%;
+    align-items: flex-end;
+    float: right;
     margin-right: 20px;
-    margin-bottom: 1em;
-    line-height: 80px;
-    padding: 0 20px;
-    color: white;
+    text-decoration: none;
 }
 
-#navbar li a:hover {
-    background: black;
+header a {
+    display: inline-flex;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 150%;
+    color: white;
+    margin: .5rem;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+.active:hover {
+    border-bottom: 1px solid white;
 }
 
 .footer {
