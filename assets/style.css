@@ -44,7 +44,6 @@ header a {
     color: white;
     margin: .5rem;
     text-decoration: none;
-    margin-top: 40px;
 }
 
 .active:hover {
@@ -58,4 +57,20 @@ header a {
     width: 100%;
     margin-top: 75px;
     color: white;
+}
+
+/* Main content */
+.about {
+    background:#e2d1f9;
+}
+
+/* Media query for screens under 320px */
+@media screen (max-width:320px) {
+    header a {
+        font-size: 70%;
+    }
+
+    #navbar {
+        font-size: 70%;
+    }
 }
